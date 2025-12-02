@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham Support..</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600;800&display=swap" rel="stylesheet">
+     <link rel="icon" type="image/png" href="LOGO.png">
+<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="Account.css">
+
+
+  </head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop playsinline>
+            <!-- <source src="HTML Tutorial for Beginners _ Complete HTML with Notes _ Code(720P_HD).mp4" type="video/mp4">  -->
+        </video>
+        <div class="fade-overlay"></div>
+    </div>
+
+    <nav>
+        <div class="logo-box">
+            <img src="LOGO.png" alt="Logo" class="logo-img">
+            <h3>Saksham Support..</h3>
+        </div>
+
+         <!-- Search Bar inside Nav -->
+            <div class="search-box">
+                <input type="text" placeholder="Search items...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+
+
+          <div class="nav-items">
+              <a href="index.html"> <i class="fas fa-home"></i> <span data-key="navHome">Home</span> </a>
+            <a href="Facility.html"> <i class="fas fa-cog"></i> <span data-key="navHome">Services</span> </a>
+          <a href="About.html"> <i class="fas fa-star"></i> <span data-key="navHome">About</span> </a>
+          <a href="Account.html"> <i class="fas fa-user-circle"></i> <span data-key="navHome">Account</span> </a>
+        </div>
+
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+                       <h1>Welcome too...<br></h1> 
+            <h1 class="footer-brand-text">Account Section..</Section></h1>
+            <p>Experience the freedom of movement with our advanced assistive technology and government support network.</p>
+        </div>
+    </header>
+
+<!-- Account Container -->
+    <div class="account-container">
+        
+        <!-- Login Form -->
+        <div class="auth-card" id="loginCard">
+            <div class="card-header">
+                <i class="fas fa-user-circle"></i>
+                <h2>Welcome Back</h2>
+                <p>Login to your account</p>
+            </div>
+            <form id="loginForm" class="auth-form">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="loginEmail" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn-primary">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+                <p class="switch-text">
+                    Don't have an account? 
+                    <a href="#" id="showSignup">Sign Up</a>
+                </p>
+            </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="auth-card hidden" id="signupCard">
+            <div class="card-header">
+                <i class="fas fa-user-plus"></i>
+                <h2>Create Account</h2>
+                <p>Join our community today</p>
+            </div>
+            <form id="signupForm" class="auth-form">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="signupName" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="signupEmail" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" id="signupPhone" placeholder="Phone Number" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="signupPassword" placeholder="Password" required>
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>
+                <label class="terms-check">
+                    <input type="checkbox" id="termsCheck" required>
+                    <span>I agree to Terms & Conditions</span>
+                </label>
+                <button type="submit" class="btn-primary">
+                    <i class="fas fa-user-plus"></i> Create Account
+                </button>
+                <p class="switch-text">
+                    Already have an account? 
+                    <a href="#" id="showLogin">Login</a>
+                </p>
+            </form>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="profile-section hidden" id="profileSection">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user-circle"></i>
+                        <button class="edit-avatar"><i class="fas fa-camera"></i></button>
+                    </div>
+                    <h2 id="profileName">User Name</h2>
+                    <p id="profileEmail">user@email.com</p>
+                </div>
+
+                <div class="profile-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <label>Email</label>
+                            <span id="displayEmail">user@email.com</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <label>Phone</label>
+                            <span id="displayPhone">+91 1234567890</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-calendar"></i>
+                        <div>
+                            <label>Member Since</label>
+                            <span id="memberSince">2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-actions">
+                    <button class="btn-edit" id="editProfileBtn">
+                        <i class="fas fa-edit"></i> Edit Profile
+                    </button>
+                    <button class="btn-logout" id="logoutBtn">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </div>
+
+                <div class="profile-stats">
+                    <div class="stat-box">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>5</h3>
+                        <p>Orders</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-heart"></i>
+                        <h3>12</h3>
+                        <p>Wishlist</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-star"></i>
+                        <h3>4.5</h3>
+                        <p>Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Success!</span>
+    </div>
+
+      
+ 
+    <div class="newsletter">
+        <h2>Contact With Us</h2>
+        <p>You Can Easily Connect with us</p>
+        <form>
+            <input type="search" placeholder="Search Items...">
+            <button>Contact Us</button>
+        </form>
+    </div><br><br><br>
+
+         
+
+    <!-- COMPACT NEWSLETTER -->
+    <div class="newsletter">
+        <h2>Stay Connected</h2>
+        <p>Get the latest updates on disability rights and technology.</p>
+        <form>
+            <input type="email" placeholder="Enter your email...">
+            <button>Subscribe</button>
+        </form>
+    </div><br><br><br>
+
+    <!-- RESTRUCTURED FOOTER -->
+    <div class="footer-wrapper">
+    
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <footer>
+            <div class="footer-top">
+                <!-- Brand & Socials -->
+                <div class="footer-brand">
+                    <div class="footer-brand-box">
+<img src="LOGO.png" alt="Logo" class="logo-img">
+                        <h2 class="footer-brand-text">Saksham Support..</h2>
+                    </div>
+                    
+                    <!-- Social Icons (Added GitHub & Facebook) -->
+                    <div class="social-icons">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-facebook"></i> <!-- Added -->
+                        <i class="fab fa-github"></i>   <!-- Added -->
+                    </div>
+                </div>
+
+                <!-- Links Side by Side -->
+                <div class="footer-links-container">
+
+                     <div class="footer-col">
+                        <h4>Quick Access</h4>
+                        <ul class="footer-links">
+                            <li <a href="index.html"> <i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> </a> Home</li>
+                            <li><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Store</li>
+                            <li><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Sceme</li>
+                            <li><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> About</li>
+                             <li><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Account</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <ul class="footer-links">
+                            <li><i class="fas fa-user-circle"></i> My Account</li>
+                            <li><i class="fas fa-box-open"></i> Track Order</li>
+                            <li><i class="fas fa-phone-alt"></i> Helpline: 1800-123-456</li>
+                            <li><i class="fas fa-envelope"></i> help@saksham.org</li>
+                        </ul>
+                    </div>
+
+              <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+              <li><i class="fas fa-chevron-left" style="font-size: 0.7rem;"></i> Privacy Policy</li>
+                 <li><i class="fas fa-chevron-left" style="font-size: 0.7rem;"></i> Terms & Conditions</li>
+                 <li><i class="fas fa-chevron-left" style="font-size: 0.7rem;"></i> Rights & Reserves</li>
+                 <li><i class="fas fa-chevron-left" style="font-size: 0.7rem;"></i> Accessibility Statement</li>
+                        </ul>
+                    </div>
+
+
+                </div>   </div>
+
+            <!-- Bottom Content (Moved Here) --> 
+            <div class="footer-bottom">
+                <p><b><i>Empowering lives through technology and support since 2025.</i></b></p>
+                <p class="highlight-text"><b><i> Designed with ❤️ for the community</i></b>.</p>
+                <p><b>I think You should know about that<br><i> It's a propt Website and thats why it's not provide any type of real serive or help...</i></b></p>
+
+            </div>
+        </footer>
+    </div> 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="floating-tools-container">
+
+      <button id="scrollTopBtn" class="float-btn scroll-float" onclick="scrollToTop()" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <div id="settingsPanel" class="settings-panel">
+        <div class="panel-header">
+            <h3>Settings</h3>
+            <button onclick="toggleSettings()" class="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        
+        <div class="setting-item">
+            <span>Text Size</span>
+            <div class="size-controls">
+                <button onclick="changeFontSize('decrease')"><i class="fas fa-minus"></i></button>
+                <span id="currentSizeLabel">100%</span>
+                <button onclick="changeFontSize('increase')"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+
+        <div class="setting-item">
+            <span>Notifications</span>
+            <label class="switch">
+                <input type="checkbox" id="notifToggle" onclick="toggleNotifications()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="setting-item">
+            <span>Dark Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="themeToggle" onclick="toggleTheme()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        
+        
+        <div class="setting-item feedback-section">
+            <button onclick="openFeedback()" class="feedback-btn">
+                <i class="fas fa-comment-dots"></i> Give Feedback
+            </button>
+        </div>
+    </div>
+
+    <button id="settingsBtn" class="float-btn setting-float" onclick="toggleSettings()" title="Settings">
+        <i class="fas fa-cog fa-spin-hover"></i>
+    </button>
+    
+  
+</div>
+
+<script src="Script.js">
+   
+ </script>
+</body>
+</html>
+
+ 
